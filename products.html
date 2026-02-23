@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products — Camalaniugan FoodHub</title>
-  <meta name="description" content="Browse our full menu of authentic Filipino kakanin and native delicacies. Fresh, homemade, and delivered to Camalaniugan, Cagayan.">
+  <title>Menu — Camalaniugan FoodHub</title>
+  <meta name="description" content="Browse menus from 8 partner restaurants in Camalaniugan, Cagayan. Order Filipino dishes, pizza, coffee, milk tea, wings, and more — delivered fresh.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,12 +18,12 @@
       <img src="images/CF.png" alt="CF" class="logo-icon">
       <div>
         <div class="brand-name">Camalaniugan FoodHub</div>
-        <div class="brand-tagline">Authentic · Fresh · Local</div>
+        <div class="brand-tagline">Restaurants · Delivered · Local</div>
       </div>
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="products.html" class="active">Products</a>
+      <a href="products.html" class="active">Menu</a>
       <a href="about.html">About Us</a>
       <a href="swot.html">SWOT</a>
       <a href="contact.html">Contact</a>
@@ -37,7 +38,7 @@
   </div>
   <div class="mobile-menu" id="mobile-menu">
     <a href="index.html"><i class="bi bi-house-fill"></i> Home</a>
-    <a href="products.html"><i class="bi bi-grid-fill"></i> Products</a>
+    <a href="products.html"><i class="bi bi-grid-fill"></i> Menu</a>
     <a href="about.html"><i class="bi bi-book-fill"></i> About Us</a>
     <a href="swot.html"><i class="bi bi-bar-chart-fill"></i> SWOT</a>
     <a href="contact.html"><i class="bi bi-telephone-fill"></i> Contact</a>
@@ -47,12 +48,12 @@
 
 <!-- ── PAGE HERO ── -->
 <section class="page-hero">
-  <h1>Our Products</h1>
-  <p>Freshly made Filipino delicacies — traditional recipes, modern convenience.</p>
+  <h1>Restaurant Menu</h1>
+  <p>Browse dishes from 8 local partner restaurants — order your favorites in one cart.</p>
   <div class="breadcrumb-custom">
     <a href="index.html">Home</a>
     <span class="sep">›</span>
-    <span class="current">Products</span>
+    <span class="current">Menu</span>
   </div>
 </section>
 
@@ -63,11 +64,16 @@
     <!-- Filters & Sort bar -->
     <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <span style="font-size:0.8rem;font-weight:700;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Filter:</span>
+        <span style="font-size:0.8rem;font-weight:700;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Restaurant:</span>
         <button class="category-pill active" data-category="all">All</button>
-        <button class="category-pill" data-category="Kakanin">Kakanin</button>
-        <button class="category-pill" data-category="Local Specialties">Local Specialties</button>
-        <button class="category-pill" data-category="Special Boxes">Special Boxes</button>
+        <button class="category-pill" data-category="juvals">Juval's</button>
+        <button class="category-pill" data-category="alfresco">Alfresco</button>
+        <button class="category-pill" data-category="korean-kanto">Korean N Kanto</button>
+        <button class="category-pill" data-category="agus-cafe">Agus Café</button>
+        <button class="category-pill" data-category="28th-hangout">28th Hangout</button>
+        <button class="category-pill" data-category="mang-mar">Mang Mar's</button>
+        <button class="category-pill" data-category="big-brew">Big Brew</button>
+        <button class="category-pill" data-category="juanas">Juana's</button>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <label for="sort-select" style="font-size:0.82rem;font-weight:700;color:var(--text-muted);">Sort by:</label>
@@ -94,7 +100,7 @@
       <div class="col-lg-4">
         <div class="footer-brand">
           <div class="brand-name-footer">Camalaniugan FoodHub</div>
-          <p>Authentic homemade Filipino delicacies from the heart of Camalaniugan, Cagayan. Delivering freshness and tradition straight to your door since 2026.</p>
+          <p>Your local restaurant marketplace — connecting Camalaniugan's best restaurants with hungry customers. Order from 8 partner restaurants, delivered fresh since 2026.</p>
           <div class="social-links mt-3">
             <a href="#" class="social-link"><i class="bi bi-facebook"></i> Facebook</a>
             <a href="#" class="social-link"><i class="bi bi-instagram"></i> Instagram</a>
@@ -106,7 +112,7 @@
         <div class="footer-heading">Quick Links</div>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="products.html">Menu</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="swot.html">SWOT Analysis</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -114,12 +120,14 @@
         </ul>
       </div>
       <div class="col-6 col-lg-2">
-        <div class="footer-heading">Categories</div>
+        <div class="footer-heading">Restaurants</div>
         <ul class="footer-links">
-          <li><a href="products.html">Kakanin</a></li>
-          <li><a href="products.html">Local Specialties</a></li>
-          <li><a href="products.html">Special Boxes</a></li>
-          <li><a href="products.html">Seasonal Items</a></li>
+          <li><a href="products.html?restaurant=juvals">Juval's Grill</a></li>
+          <li><a href="products.html?restaurant=alfresco">Alfresco Pizzeria</a></li>
+          <li><a href="products.html?restaurant=korean-kanto">Korean N Kanto</a></li>
+          <li><a href="products.html?restaurant=agus-cafe">Agus Café</a></li>
+          <li><a href="products.html?restaurant=big-brew">Big Brew</a></li>
+          <li><a href="products.html?restaurant=juanas">Juana's Food Hub</a></li>
         </ul>
       </div>
       <div class="col-lg-4">
@@ -163,7 +171,7 @@
 
     const grid = document.getElementById('products-grid');
     const cat  = document.querySelector('.category-pill.active')?.dataset?.category || 'all';
-    const filtered = cat === 'all' ? sorted : sorted.filter(p => p.category === cat);
+    const filtered = cat === 'all' ? sorted : sorted.filter(p => p.restaurant === cat);
     renderProductCards(grid, filtered);
   });
 </script>
